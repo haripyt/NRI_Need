@@ -1,0 +1,92 @@
+<!-- navbar.html -->
+<nav style="
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:60px;
+    background-color:#eae9eedf;
+    display:flex;
+    align-items:center;
+    box-sizing:border-box;
+    z-index:1000;
+">
+
+    <!-- LOGO -->
+    <div style="margin-left:30px;">
+        <img src="./images/NRI_logo.png" style="height:50px;">
+    </div>
+
+    <!-- MENU BOX -->
+    <div id="menuBox" style="
+        margin-left:auto;
+        margin-right:40px;
+        display:flex;
+        gap:12px;
+    ">
+
+        <!-- MENU ITEM -->
+        <a href="./index.html" style="
+            padding:8px 18px;
+            background:#ffffff;
+            color:#111;
+            text-decoration:none;
+            font-size:16px;
+            font-weight:700;
+            transform:skew(-12deg);
+            box-shadow:0 3px 6px rgba(0,0,0,0.15);
+        ">
+            <span style="display:inline-block; transform:skew(12deg);">Home</span>
+        </a>
+
+        <a href="./about.html" style="
+            padding:8px 18px;
+            background:#ffffff;
+            color:#111;
+            text-decoration:none;
+            font-size:16px;
+            font-weight:700;
+            transform:skew(-12deg);
+            box-shadow:0 3px 6px rgba(0,0,0,0.15);
+        ">
+            <span style="display:inline-block; transform:skew(12deg);">About</span>
+        </a>
+
+        <a href="./service.html" style="
+            padding:8px 18px;
+            background:#ffffff;
+            color:#111;
+            text-decoration:none;
+            font-size:16px;
+            font-weight:700;
+            transform:skew(-12deg);
+            box-shadow:0 3px 6px rgba(0,0,0,0.15);
+        ">
+            <span style="display:inline-block; transform:skew(12deg);">Services</span>
+        </a>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZtAsyniCxkeR-Y-MShaUjs4KsI7uogJwiBH-U1RK_XthpCw/viewform?usp=preview" style="
+            padding:8px 18px;
+            background:#ffffff;
+            color:#111;
+            text-decoration:none;
+            font-size:16px;
+            font-weight:700;
+            transform:skew(-12deg);
+            box-shadow:0 3px 6px rgba(0,0,0,0.15);
+        ">
+            <span style="display:inline-block; transform:skew(12deg);">Contact</span>
+        </a>
+
+    </div>
+
+</nav>
+
+<!-- RESPONSIVE FIX -->
+<style>
+@media (max-width: 768px) {
+    #menuBox {
+        display: none;
+    }
+}
+</style>
