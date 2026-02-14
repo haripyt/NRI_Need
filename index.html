@@ -16,6 +16,8 @@
     <link rel='dns-prefetch' href='//stats.wp.com' />
     <link rel='dns-prefetch' href='//victorthemes.com' />
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <script src="./navbar.js"></script>
+
     <link rel="alternate" type="application/rss+xml" title="Windfall &raquo; Feed" href="https://victorthemes.com/themes/windfall/feed/" />
     <link rel="alternate" type="application/rss+xml" title="Windfall &raquo; Comments Feed" href="https://victorthemes.com/themes/windfall/comments/feed/" />
     <script type="text/javascript">
@@ -1018,6 +1020,250 @@ header {
                 display: none;
             }
         }
+
+        /* ==== GLOBAL RESPONSIVE TEXT SIZING ==== */
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px !important;
+            }
+            
+            h1 {
+                font-size: 24px !important;
+                line-height: 1.3 !important;
+                margin: 15px 0 !important;
+            }
+            
+            h2 {
+                font-size: 20px !important;
+                margin: 12px 0 !important;
+            }
+            
+            h3 {
+                font-size: 18px !important;
+                margin: 10px 0 !important;
+            }
+            
+            h4, h5, h6 {
+                font-size: 16px !important;
+            }
+            
+            p {
+                font-size: 15px !important;
+                line-height: 1.6 !important;
+            }
+            
+            a {
+                font-size: inherit !important;
+            }
+            
+            button, .btn {
+                padding: 12px 24px !important;
+                font-size: 14px !important;
+            }
+
+            .container {
+                width: 95% !important;
+                max-width: 100% !important;
+                margin: auto !important;
+                padding: 0 10px !important;
+            }
+
+            .caption-wrap-inner {
+                margin-left: 20px !important;
+                max-width: 95% !important;
+            }
+
+            .caption-subtitle {
+                font-size: 16px !important;
+            }
+
+            .caption-title {
+                font-size: 28px !important;
+                line-height: 1.3 !important;
+            }
+
+            .wndfal-btns-group {
+                flex-direction: column !important;
+                gap: 12px !important;
+            }
+
+            .wndfal-btns-group a {
+                width: 100% !important;
+                text-align: center !important;
+            }
+
+            ul li {
+                font-size: 16px !important;
+                line-height: 1.8 !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 14px !important;
+            }
+            
+            h1 {
+                font-size: 20px !important;
+                line-height: 1.2 !important;
+            }
+            
+            h2 {
+                font-size: 18px !important;
+            }
+            
+            h3 {
+                font-size: 16px !important;
+            }
+            
+            p {
+                font-size: 14px !important;
+            }
+            
+            button, .btn {
+                padding: 10px 20px !important;
+                font-size: 13px !important;
+            }
+
+            .container {
+                width: 90% !important;
+                padding: 0 5px !important;
+            }
+
+            .caption-wrap-inner {
+                margin-left: 10px !important;
+                max-width: 100% !important;
+            }
+
+            .caption-subtitle {
+                font-size: 14px !important;
+            }
+
+            .caption-title {
+                font-size: 22px !important;
+            }
+
+            ul li {
+                font-size: 14px !important;
+                line-height: 1.6 !important;
+            }
+        }
+
+        /* ==== SECTION RESPONSIVE PADDING ==== */
+        @media (max-width: 768px) {
+            section {
+                padding: 40px 0px !important;
+            }
+
+            .wndfal-mid-wrap,
+            .wndfal-full-width {
+                padding: 30px 15px !important;
+            }
+
+            .elementor-container {
+                padding: 0px 0 !important;
+            }
+
+            .elementor-column {
+                margin-bottom: 20px !important;
+            }
+        }
+
+        /* ==== HERO SECTION MOBILE RESPONSIVE ==== */
+        @media (max-width: 768px) {
+            .swiper-slide {
+                height: auto !important;
+                min-height: 400px !important;
+            }
+
+            .caption-wrap-inner {
+                margin-left: 20px !important;
+                max-width: 95% !important;
+            }
+
+            .caption-subtitle {
+                font-size: 16px !important;
+            }
+
+            .caption-title {
+                font-size: 28px !important;
+                line-height: 1.3 !important;
+            }
+
+            .wndfal-btns-group {
+                flex-direction: column !important;
+                gap: 12px !important;
+            }
+
+            .wndfal-btns-group a {
+                width: 100% !important;
+                text-align: center !important;
+            }
+
+            ul li {
+                font-size: 16px !important;
+                line-height: 1.8 !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .swiper-slide {
+                height: auto !important;
+                min-height: 350px !important;
+            }
+
+            .caption-wrap-inner {
+                margin-left: 10px !important;
+                max-width: 100% !important;
+            }
+
+            .caption-subtitle {
+                font-size: 14px !important;
+            }
+
+            .caption-title {
+                font-size: 22px !important;
+                line-height: 1.2 !important;
+            }
+
+            ul li {
+                font-size: 14px !important;
+                line-height: 1.6 !important;
+            }
+        }
+
+        /* ==== IMAGE & MEDIA RESPONSIVE ==== */
+        @media (max-width: 768px) {
+            img {
+                max-width: 100% !important;
+                height: auto !important;
+                display: block !important;
+            }
+
+            .elementor-widget-image img {
+                max-width: 100% !important;
+            }
+
+            video {
+                max-width: 100% !important;
+                height: auto !important;
+            }
+        }
+
+        /* ==== FLEXBOX & GRID RESPONSIVE ==== */
+        @media (max-width: 768px) {
+            .elementor-row {
+                flex-direction: column !important;
+            }
+
+            .elementor-column-gap-default {
+                gap: 15px !important;
+            }
+
+            [style*="display: flex"] {
+                flex-wrap: wrap !important;
+            }
+        }
     </style>
 </head>
 
@@ -1276,7 +1522,7 @@ fetch("navbar.html")
 
                                       <div class="swiper-slide" 
     style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1500&q=80'); 
-           background-size: cover; margin-top: 60px; background-position: center; position: relative;" 
+           background-size: cover; margin-top: 70px; background-position: center; position: relative;" 
     data-swiper-autoplay="5000">
 
     <!-- Dark overlay for better text visibility -->
@@ -1453,7 +1699,7 @@ function toggleQuoteOptions() {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="elementor-element elementor-element-79245e2 elementor-widget elementor-widget-vt-windfall_emergency" data-id="79245e2" data-element_type="widget" data-settings="{&quot;link_icon&quot;:&quot;fa fa-phone&quot;}" data-widget_type="vt-windfall_emergency.default">
+                                                <!-- <div class="elementor-element elementor-element-79245e2 elementor-widget elementor-widget-vt-windfall_emergency" data-id="79245e2" data-element_type="widget" data-settings="{&quot;link_icon&quot;:&quot;fa fa-phone&quot;}" data-widget_type="vt-windfall_emergency.default"> -->
                                                     <div class="elementor-widget-container">
                                                         <div class="services-emergency">
                                                             <!-- <h3 class="services-emergency-title">Contact To This Number : </h3><span> <i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+91 78458 39740"  >+91 78458 39740</a></span></div> -->
@@ -1564,7 +1810,7 @@ function toggleQuoteOptions() {
 
                                 
                                 
-                                <section class="elementor-section elementor-top-section elementor-element elementor-element-65f0133 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="65f0133" data-element_type="section">
+                                <!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-65f0133 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="65f0133" data-element_type="section"> -->
                                     <div class="elementor-container elementor-column-gap-default">
                                         <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-68dc42d" data-id="68dc42d" data-element_type="column">
                                             <div class="elementor-widget-wrap elementor-element-populated">
@@ -1579,13 +1825,13 @@ function toggleQuoteOptions() {
                                             </div>
                                         </div>
                                     </div>
-                                </section>
+                                <!-- </section> -->
 <section style="padding:60px 0; background:#f7f8fa;">
     <div class="container">
         <div class="row g-4">
 
             <!-- Service Card Start -->
-           <div class="col-xl-4 col-lg-6 col-md-6">
+           <div class="col-xl-4 col-lg-6 col-md-6 mt-3">
                 <div class="service-card">
                     <div class="service-front">
                       
@@ -1607,7 +1853,7 @@ function toggleQuoteOptions() {
                 </div>
             </div>
 
-             <div class="col-xl-4 col-lg-6 col-md-6">
+             <div class="col-xl-4 col-lg-6 col-md-6 mt-3 ">
                 <div class="service-card">
                     <div class="service-front">
                       
@@ -1624,7 +1870,7 @@ function toggleQuoteOptions() {
                 </div>
             </div>
 
-            <div class="col-xl-4 col-lg-6 col-md-6">
+            <div class="col-xl-4 col-lg-6 col-md-6 mt-3">
                 <div class="service-card">
                     <div class="service-front">
                       
@@ -1988,27 +2234,6 @@ jQuery(document).ready(function($) {
 
 
 
-                                <!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-a2329cc elementor-section-stretched elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="a2329cc" data-element_type="section"
-                                    data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
-                                    <div class="elementor-container elementor-column-gap-default">
-                                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5d857ef" data-id="5d857ef" data-element_type="column">
-                                            <div class="elementor-widget-wrap elementor-element-populated">
-                                                <div class="elementor-element elementor-element-bc37568 elementor-widget elementor-widget-vt-windfall_emergency" data-id="bc37568" data-element_type="widget" data-settings="{&quot;link_icon&quot;:&quot;fa fa-phone&quot;}" data-widget_type="vt-windfall_emergency.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="wndfal-emergency  emergency-style-two">
-                                                            <div class="container">
-                                                                <h2 class="emergency-title">Contact Us Today For better Service For Your NRI Needs</h2>
-                                                                <div class="emergency-call-link"> <i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:78458 39740">+91 78458 39740
-</a></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section> -->
-
                                 
 
 
@@ -2057,7 +2282,7 @@ jQuery(document).ready(function($) {
       </a>
     </div>
   </div>
-</section>
+</section> 
 
 
 
@@ -2543,6 +2768,22 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         };
     </script>
+
+    
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  hamburger.addEventListener('click', ()=>{
+    if(mobileMenu.style.display === 'flex'){
+      mobileMenu.style.display = 'none';
+    } else {
+      mobileMenu.style.display = 'flex';
+    }
+  });
+});
+</script>
     <script type='text/javascript' src='https://victorthemes.com/themes/windfall/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.23.4' id='elementor-frontend-js'></script>
     <script type='text/javascript' src='https://victorthemes.com/themes/windfall/wp-content/plugins/windfall-core/elementor/assets/js/windfall-elementor.js?ver=6.2.6' id='windfall-elementor-js'></script>
 
